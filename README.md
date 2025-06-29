@@ -52,3 +52,64 @@
 > 🛠 [Guest Additions troubleshooting](./troubleshooting/guest-additions.md)
 
 ***
+***
+
+<br>
+
+## ⚔️ Phase 2: Attack & Detect
+
+<br>
+
+### 🎯 1. Reconnaissance (Scanning the Target)
+
+- Run an aggressive scan on the Ubuntu Server from Kali
+
+- Document open ports, running services, and potential vulnerabilities
+
+
+
+***
+<br>
+
+### 🔓 2. Launch Basic Attacks
+
+- Choose a target service (e.g. SSH or HTTP) and run an attack:
+
+	- Hydra for SSH brute-force
+	
+	- Burp Suite to simulate a basic web login attack
+
+
+
+***
+<br>
+
+### 🛡 3. Detect the Activity
+
+- Monitor traffic on the Ubuntu Desktop (Suricata) VM
+
+- Use fast.log, eve.json, or Wireshark to inspect alerts
+
+- Label:
+
+	- What was detected?
+	
+	- What was missed?
+	
+	- Severity level?
+
+
+
+***
+<br>
+
+### 📁 4. Export & Archive Evidence
+
+- Save important logs or packet captures
+
+	- Suricata alerts
+	
+	- Nmap scan results
+	
+	- Screenshots of attack or detection
+  
