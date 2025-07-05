@@ -1,0 +1,26 @@
+# Nmap 7.95 scan initiated Mon Jun 30 01:25:13 2025 as: /usr/lib/nmap/nmap --privileged -A -oN kali-nmap-scan-results.txt 192.168.10.11
+Nmap scan report for 192.168.10.11
+Host is up (0.00028s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.12 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 6d:7e:03:8e:7b:00:b7:d1:a9:b8:2e:30:74:64:7e:c1 (ECDSA)
+|_  256 a6:73:6e:ef:a2:93:df:4a:30:f4:f9:e2:4a:c5:00:3d (ED25519)
+80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+MAC Address: 08:00:27:F0:ED:CC (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:mikrotik:routeros:7 cpe:/o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.28 ms 192.168.10.11
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 30 01:25:34 2025 -- 1 IP address (1 host up) scanned in 20.83 seconds
